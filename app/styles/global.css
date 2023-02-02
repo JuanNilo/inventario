@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    background-color: mediumslateblue;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.3));
+}
+
+h1{
+    margin: 0;
+}
+.layout{
+    color: mediumslateblue;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: white;
+    padding: 20px;
+}
+
+
+
+/* listado general de productos */
+
+.lista-productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(
+        150px,
+        1fr
+        )
+        );
+    padding: 0px 20px;
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+/* producto de la lista general */
+.producto{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto:hover{
+    background-color: bisque ;
+}
+
+/* foto de la lista general */
+.foto-producto{
+    height: 90%;
+    width: 90%;
+}
+
+
+/* Pagina propia del producto */
+.producto-page{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.producto-page h1{
+    font-weight: 300;
+    font-size: 3.5rem;
+}
+
+.producto-page h2{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.boton{
+    height: 50px;
+    width: 100px;
+    margin: 0px 10px;
+    border: none;
+    background-color: white;
+    font-size: 1.4rem;
+    font-family: 'Secular One', sans-serif;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background-color:rgb(208, 170, 236);
+}
+
+
